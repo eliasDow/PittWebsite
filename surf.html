@@ -5,12 +5,16 @@
 		<title>Surf Forecast</title>
 	</head>
 	<body>
-		<p>
-			Newport Cam
-			<br>
-			<img src="http://70.184.11.182/axis-cgi/jpg/image.cgi?resolution=320x240&text=1&textstring=Northeast%20Surfing%20-&dummy=1436630575153">
-		</p>
+		<div id="cams">
+			<img style="display:inline" src="http://70.184.11.182/axis-cgi/jpg/image.cgi?resolution=320x240&text=1&textstring=Northeast%20Surfing%20-&dummy=1436630575153"/>
+			<img style="display:inline" src="http://70.183.174.197/axis-cgi/jpg/image.cgi?resolution=320x240&dummy=1437880854315"/>
+		</div>
+		<div id="buoy">
+			
+			<iframe src="http://www.ndbc.noaa.gov/widgets/station_page.php?station=44097" style="border: solid thin #3366ff; width:300px; height:300px;display:inline"></iframe>
 		
+			<iframe src="http://www.ndbc.noaa.gov/widgets/station_page.php?station=NWPR1" style="border: solid thin #3366ff; width:300px; height:300px; display:inline"></iframe>
+		</div>
 	</body>
 	
 

@@ -1,0 +1,49 @@
+ 
+body{
+	background-color:#F6F6F6;
+}
+#container{
+	text-align:justify;
+	-ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+div>h2{
+	text-align:left;
+	margin-top:0;
+	font-family:"Slabo 27px";
+}
+/*div.vertical-line{
+	width: 1px;
+	background-color:black;
+	height:100%;
+	display:inline-block;
+	}*/
+h2{
+	vertical-align:middle;
+	position:absolute;
+	/*border-top: 1px solid #cc3;*/
+	padding: 15px;;
+	
+}
+h2:hover{
+	background-color: gray;
+}
+
+.header{
+	display:inline-block;
+	min-width:200px;
+	text-align:center;
+	text-justify: distribute-all-lines;
+	vertical-align:top;
+	*display: inline;
+	margin:5px 1% 5px 1%;
+	
+}
+.stretch{
+	width:100%;
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+}
+
