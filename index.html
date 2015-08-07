@@ -3,32 +3,41 @@
 
 	
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>		
+		<link type="text/css" rel="stylesheet" href="styles/stylesheet.css" charset="utf-8"/>
+		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/jquery.easings.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+        $('#fullpage').fullpage();
+			});
+		</script>
 		<title>Elias Dowling-Huppert</title>
 	</head>
 	
 	<body>
-		<div id="container">
-			<div class="header">
-				<h2>Elias Dowling-Huppert</h2>
-			</div>
-			<!--<div class="vertical-line" />-->
-
-			<div class="header">
-				<h2>About</h2>
-			</div>
-			<div class="header">
-				<h2>Resume</h2>
-			</div>
-			<div class="header"><h2>Projects</h2></div>
-			<span class="stretch"></span>
+		<!-- Menu bar -->
+		<div id="menu" class="pic">
+			<h2 class="header" data-menuanchor="secondPage"><a href="#secondPage" class="fill-div">About</a></h2>
+			<h2 class="header" data-menuanchor="thirdPage"><a href="media/resume8-6.pdf" class="fill-div">Resume</a></h2>
+			<h2 class="header" data-menuanchor="fourthPage">
+				<a href="#fourthPage" class ="fill-div">Interests</a>
+			</h2>
 		</div>
+		<div id="fullpage">
+			<div id="container" class="section pic"  data-anchor="firstPage">
+				<div class="headerName" id="name">
+					<h2>Elias Dowling-Huppert</h2>
+				</div>
+			</div>
+			<div class="section" id="section1" data-anchor="secondPage">About Me</div>
+			<div class="section" id="section2" data-anchor="thirdPage">Resume</div>
+			<div class="section" id="section3" data-anchor="fourthPage">Interests</div>
 
-		<br>
-		<p style = "font-size: 20px">
-			<a href="surf.html"> Surf Forecast </a>
-		</p>
+		</div>
+		
 	</body>
 
 

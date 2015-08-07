@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'webfontregular';
-    src: url('fonts/leaguegothic-regular-webfont-webfont.eot');
-    src: url('fonts/leaguegothic-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/leaguegothic-regular-webfont-webfont.woff2') format('woff2');/*,
+    src: url('../fonts/leaguegothic-regular-webfont-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont-webfont.woff2') format('woff2');/*,
          url('leaguegothic-regular-webfont-webfont.woff') format('woff'),
          url('leaguegothic-regular-webfont-webfont.ttf') format('truetype'),
          url('leaguegothic-regular-webfont-webfont.svg#webfontregular') format('svg');         Interesting....*/	
@@ -23,15 +23,19 @@
 	text-align:center;
 	-ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
-	
+	padding-top:0px;
 }
 
-div>div>h2{
+.header,.header>a{
 	text-align:center;
-	margin:0px;
+	margin-top:1px;
 	font-family:"webfontregular";
 	font-size:2rem;
 	min-width: 10em;
+	display:inline-block;
+	text-align:center;
+	text-justify: distribute-all-lines;
+	*display: inline;
 	/*fade*/
 	color:black;
 	background-color:transparent;
@@ -41,31 +45,19 @@ div>div>h2{
     -webkit-transition:color .2s ease-out, background 1s ease-in;
     transition:color .2s ease-out, background 1s ease-in;
 }
-
-div>div>h2:hover{
+h2>a:hover{
 	background-color: gray;
 	border-radius: 2px;
 }
-
 /*makes whole div clickable*/
 a.fill-div{
 	height:100%;
 	width:100%;
     display: block;
 }
-
 .link:link{
 	color: blue;
 }
-
-.header{
-	display:inline-block;
-	text-align:center;
-	text-justify: distribute-all-lines;
-	*display: inline;	
-	
-}
-
 a:link{
 	color:black; 
 	background-color:transparent; 
@@ -76,11 +68,22 @@ a:visited {
 	background-color:transparent; 
 	text-decoration:none
 }
-body{
-	background: url(media/background.jpg) no-repeat center center fixed; 
+.section{
+	padding-top:2.8rem;
+	margin-top:0px;
+}
+.pic{
+	background: url(../media/background.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	text-align:center;
 }
-
+#menu{
+	text-align:center;
+	position:fixed;
+	height: 2.7rem;
+	z-index: 70;
+	width: 100%;
+}
