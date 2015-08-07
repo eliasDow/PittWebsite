@@ -11,12 +11,11 @@
 
 }
 #name.headerName>h2{
-	font-size:3rem;
+	font-size:3em;
 	font-family:"webfontregular";
 	vertical-align: top;
 	text-align: center;
 	margin-bottom: 0px;
-	margin-top:10px;
 	padding-top:5%;
 }
 #container{
@@ -24,14 +23,15 @@
 	-ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
 	padding-top:0px;
+	background: url(../media/background.jpg) no-repeat center center fixed;
 }
 
 .header,.header>a{
 	text-align:center;
-	margin-top:1px;
+	margin-top:.1em;
 	font-family:"webfontregular";
-	font-size:2rem;
-	min-width: 10em;
+	font-size:1.5em;
+	min-width: 5em;
 	display:inline-block;
 	text-align:center;
 	text-justify: distribute-all-lines;
@@ -46,7 +46,7 @@
     transition:color .2s ease-out, background 1s ease-in;
 }
 h2>a:hover{
-	background-color: gray;
+	background-color: white;
 	border-radius: 2px;
 }
 /*makes whole div clickable*/
@@ -72,18 +72,41 @@ a:visited {
 	padding-top:2.8rem;
 	margin-top:0px;
 }
+#section1{
+	background: url(../media/surf.jpg) center;
+	width:100%;
+	max-width:3295px;
+	background-size:100%;
+	
+	
+	}
 .pic{
 	background: url(../media/background.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	text-align:center;
 }
 #menu{
 	text-align:center;
 	position:fixed;
-	height: 2.7rem;
+	height: 3.3em;
 	z-index: 70;
 	width: 100%;
+}
+#section1, #section2, #section3{
+	text-align:center;
+	font-family:"Lato";
+}
+#section2 a{
+	font-size:3em;
+}
+.about{
+	text-align:left;
+	margin-left: 1rem;
+	margin-top:0px;
+	margin-bottom:1px;
+}
+#who{
+	margin-top:1px;
+}
+#contact>li, #contact{
+	list-style:none;
+	padding-left:0px;
 }
