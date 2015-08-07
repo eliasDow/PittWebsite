@@ -5,14 +5,24 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="styles/stylesheet.css" charset="utf-8"/>
 		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
 		<link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="scripts/jquery.easings.min.js"></script>
 		<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
 		<script type="text/javascript">
+		
 		$(document).ready(function() {
-        $('#fullpage').fullpage();
+				$('#fullpage').fullpage({
+					sectionsColor: ['#FFFFFF','#7889B6', '#E16363','whitesmoke'],
+					anchors:['firstPage','secondPage','thirdPage','fourthPage'],
+					menu: '#menu',
+					scrollingSpeed: 1000,
+					scrollBar: true
 			});
+		});
+		
 		</script>
 		<title>Elias Dowling-Huppert</title>
 	</head>
@@ -20,10 +30,11 @@
 	<body>
 		<!-- Menu bar -->
 		<div id="menu" class="pic">
-			<h2 class="header" data-menuanchor="secondPage"><a href="#secondPage" class="fill-div">About</a></h2>
-			<h2 class="header" data-menuanchor="thirdPage"><a href="media/resume8-6.pdf" class="fill-div">Resume</a></h2>
+			<h2 class="header" data-menuanchor="firstPage"><a href="#firstPage" class="fill-div">HOME</a></h2>
+			<h2 class="header" data-menuanchor="secondPage"><a href="#secondPage" class="fill-div">ABOUT</a></h2>
+			<h2 class="header" data-menuanchor="thirdPage"><a href="#thirdPage" class="fill-div">RESUME</a></h2>
 			<h2 class="header" data-menuanchor="fourthPage">
-				<a href="#fourthPage" class ="fill-div">Interests</a>
+				<a href="#fourthPage" class ="fill-div">CONTACT</a>
 			</h2>
 		</div>
 		<div id="fullpage">
@@ -32,9 +43,31 @@
 					<h2>Elias Dowling-Huppert</h2>
 				</div>
 			</div>
-			<div class="section" id="section1" data-anchor="secondPage">About Me</div>
-			<div class="section" id="section2" data-anchor="thirdPage">Resume</div>
-			<div class="section" id="section3" data-anchor="fourthPage">Interests</div>
+			<div class="section" id="section1" data-anchor="secondPage">
+				<h3>About Me</h3>
+				<p class="about">Who I am</p>
+				<ul class="about" id="who">
+					<li>Rising sophomore at the University of Pittsburgh</li>
+					<li>Studying computer science</li>
+					<li>Things I enjoy: surfing,  ultimate frisbee,  mountain biking,  photography</li>
+				</ul>
+				<!--<img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/10497275_10202513612626217_941106762678813178_o.jpg"/>-->
+			</div>
+			<div class="section" id="section2" data-anchor="thirdPage">
+				<h3>Resume</h3>
+				<a href="media/resume8-6.pdf">PDF</a>
+			</div>
+			<div class="section" id="section3" data-anchor="fourthPage">
+				<h3>Contact</h3>
+				<ul id="contact">
+					<li><a href="mailto:ebd16@pitt.edu">Email</a></li>
+					<li><a href="https://github.com/eliasDow">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/pub/elias-dowling-huppert/b8/5aa/78">
+						LinkedIn
+						</a>
+					</li>
+				<ul>
+			</div>
 
 		</div>
 		
